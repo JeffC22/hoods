@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../constants.dart';
-import '../../../size_config.dart';
+import 'package:hoods/constants.dart';
+import 'package:hoods/size_config.dart';
 
 class Info extends StatelessWidget {
   const Info({

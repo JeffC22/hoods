@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hoods/screens/home/home_screen.dart';
-import 'package:hoods/screens/profile/prrofile_screen.dart';
+import 'package:hoods/screens/profile/profile_screen.dart';
 
 class NavItem {
   final int id;
@@ -18,12 +18,12 @@ class NavItem {
   }
 }
 
-// If we made any changes here Provider package rebuid those widget those use this NavItems
+// If we made any changes here Provider package rebuilds those widget use this NavItems
 class NavItems extends ChangeNotifier {
   // By default first one is selected
   int selectedIndex = 0;
 
-  void chnageNavIndex({int index}) {
+  void changeNavIndex({int index}) {
     selectedIndex = index;
     // if any changes made it notify widgets that use the value
     notifyListeners();

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:hoods/models/RecipeBundel.dart';
+import 'package:hoods/models/RecipeBundle.dart';
 import 'package:hoods/size_config.dart';
 
 import 'categories.dart';
-import 'recipe_bundel_card.dart';
+import 'recipe_bundle_card.dart';
 
 class Body extends StatelessWidget {
   @override
@@ -28,7 +28,7 @@ class Body extends StatelessWidget {
                           : 0,
                   childAspectRatio: 1.65,
                 ),
-                itemBuilder: (context, index) => RecipeBundelCard(
+                itemBuilder: (context, index) => RecipeBundleCard(
                   recipeBundle: recipeBundles[index],
                   press: () {},
                 ),

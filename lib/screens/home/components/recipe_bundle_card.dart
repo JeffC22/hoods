@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:hoods/models/RecipeBundel.dart';
+import 'package:hoods/models/RecipeBundle.dart';
 
 import 'package:hoods/size_config.dart';
 
-class RecipeBundelCard extends StatelessWidget {
+class RecipeBundleCard extends StatelessWidget {
   final RecipeBundle recipeBundle;
   final Function press;
 
-  const RecipeBundelCard({Key key, this.recipeBundle, this.press})
+  const RecipeBundleCard({Key key, this.recipeBundle, this.press})
       : super(key: key);
   @override
   Widget build(BuildContext context) {
@@ -21,7 +21,7 @@ class RecipeBundelCard extends StatelessWidget {
           color: recipeBundle.color,
           borderRadius: BorderRadius.circular(defaultSize * 1.8), //18
         ),
-        child: Row( 
+        child: Row(
           children: <Widget>[
             Expanded(
               child: Padding(

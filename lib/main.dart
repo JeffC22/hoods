@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:hoods/size_config.dart';
 import 'package:provider/provider.dart';
-import 'package:hoods/constants.dart';
 import 'package:hoods/models/NavItem.dart';
 import 'package:hoods/screens/home/home_screen.dart';
 
@@ -12,11 +12,11 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider(
+    return ChangeNotifierProvider<NavItems>(
       create: (context) => NavItems(),
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Recipe App',
+        title: 'Hoods',
         theme: ThemeData(
           // backgroundColor: Colors.white,
           scaffoldBackgroundColor: Colors.white,

@@ -21,7 +21,10 @@ class HomeScreen extends StatelessWidget {
     return AppBar(
       leading: IconButton(
         icon: SvgPicture.asset("assets/icons/menu.svg"),
-        onPressed: () {},
+        onPressed: () {
+//          print(SizeConfig.screenHeight.toString());
+//          print(SizeConfig.screenWidth.toString());
+        },
       ),
       // On Android by default its false
       centerTitle: true,
